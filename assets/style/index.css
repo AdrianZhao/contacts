@@ -117,3 +117,51 @@ button:hover:after {
   transform-origin: top left;
   transform: scale(0);
 }
+.message {
+  height: 60px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.board {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.board div {
+  padding: 10px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #666;
+  border: 2px solid #fff;
+}
+.board div:hover {
+  background-color: #777;
+}
+.board div p {
+  padding-left: 10px;
+  font-weight: 600;
+}
+.board div span {
+  font-weight: 300;
+}
+.count {
+  border: 2px solid #fff;
+  width: 144px;
+  height: 48px;
+  line-height: 48px;
+  position: fixed;
+  bottom: 40px;
+  right: 32px;
+  border-radius: 4px;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  margin-inline: auto;
+  cursor: default;
+}
